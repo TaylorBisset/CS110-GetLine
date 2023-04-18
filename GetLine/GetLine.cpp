@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -10,7 +11,7 @@ int main()
 
     cout << "Enter your full name: ";
     
-    cin >> fullName;
+    getline(cin, fullName);
 
     cout << "My name is " << fullName << endl;
 
