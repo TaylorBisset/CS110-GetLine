@@ -27,7 +27,11 @@ int main()
 
     cout << setprecision(3) << 5.555 << endl;
 
-    cout << 18 << hex << ' ' << 19 << ' ' << 20;
+    cout << 18 << hex << ' ' << 19 << ' ' << 20 << endl;
+
+    cout << setfill('~') << setw(5) << 321 << endl; // fills empty spaces with ~
+
+    cout << setprecision(1) << 5.678 << endl; // outputs 5.7
 
     cout << endl << endl;
 }
