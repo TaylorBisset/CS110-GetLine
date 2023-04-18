@@ -11,6 +11,8 @@ int main()
 {
     string fullName;
 
+    // setw() by default, justifies to the right by number of spaces and characters in the argument
+
     cout << setw(10) << "Hello" << endl;
 
     cout << setw(30) << "Enter your full name: ";
@@ -18,6 +20,12 @@ int main()
     getline(cin, fullName);
 
     cout << setw(30) << "My name is " << fullName << endl;
+
+    cout << setprecision(1) << 5.555 << endl;
+
+    cout << setprecision(3) << 5.555 << endl;
+
+    cout << setprecision(6) << 5.555 << endl;
 
     cout << endl << endl;
 }
