@@ -23,9 +23,9 @@ int main()
 
     cout << setprecision(1) << 5.555 << endl;
 
-    cout << setprecision(3) << 5.555 << endl;
+    cout << fixed << setprecision(2) << 5.555 << endl;
 
-    cout << setprecision(6) << 5.555 << endl;
+    cout << setprecision(3) << 5.555 << endl;
 
     cout << endl << endl;
 }
