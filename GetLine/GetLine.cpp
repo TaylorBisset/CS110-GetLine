@@ -13,11 +13,11 @@ int main()
 
     cout << setw(10) << "Hello" << endl;
 
-    cout << "Enter your full name: ";
+    cout << setw(30) << "Enter your full name: ";
     
     getline(cin, fullName);
 
-    cout << "My name is " << fullName << endl;
+    cout << setw(30) << "My name is " << fullName << endl;
 
     cout << endl << endl;
 }
