@@ -27,6 +27,8 @@ int main()
 
     cout << setprecision(3) << 5.555 << endl;
 
+    cout << 18 << hex << ' ' << 19 << ' ' << 20;
+
     cout << endl << endl;
 }
 
