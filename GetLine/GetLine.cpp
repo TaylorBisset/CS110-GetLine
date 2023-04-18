@@ -3,11 +3,15 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
+
 using namespace std;
 
 int main()
 {
     string fullName;
+
+    cout << setw(10) << "Hello" << endl;
 
     cout << "Enter your full name: ";
     
