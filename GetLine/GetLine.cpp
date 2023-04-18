@@ -6,7 +6,15 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    string fullName;
+
+    cout << "Enter your full name: ";
+    
+    cin >> fullName;
+
+    cout << "My name is " << fullName << endl;
+
+    cout << endl << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
