@@ -28,10 +28,62 @@ int main()
     cout << setprecision(3) << 5.555 << endl;
 
     cout << 18 << hex << ' ' << 19 << ' ' << 20 << endl;
+    // reset to decadecimal form hexadecimal
+    cout << dec;
 
-    cout << setfill('~') << setw(5) << 321 << endl; // fills empty spaces with ~
+    cout << setfill('~') << setw(5) << 321 << endl << endl; // fills empty spaces with ~
 
+    cout << "Begin Question sets" << endl << endl;
+    // Question 1: Print 5.678 with 2 significant digits
     cout << setprecision(1) << 5.678 << endl; // outputs 5.7
+
+    // Question 2: Print 77.89578 to exactly 3 decimal places
+    cout << setprecision(3) << fixed << 77.89578 << endl; // outputs 77.896
+
+    // Question 3: Print the number 100 with ten spaces
+    cout << setfill(' ') << setw(10) << 100 << endl; // outputs "          100"
+
+    // Question 4: Print with ! instead of a space
+    cout << setfill('!') << setw(10) << 100 << endl;
+
+    // Question 5: Print 56.9089 as dollars and cents
+    cout << "$" << setprecision(2) << fixed << 56.9089 << endl; // outputs $56.91
+
+    // Question 6: Print 56.98089 as dollars and cents in a field of 10
+    cout << "$";
+    cout << setfill(' ') << setw(10) << setprecision(2) << fixed << 56.9089 << endl; // outputs "$     56.91"
+
+    // Question 7: Print 56.98089 as dollars and cents with 7 places in front of decimal byt pad with zeros
+    cout << "$";
+    cout << setfill('0') << setw(10) << setprecision(2) << fixed << 56.9089 << endl; // outputs "$0000056.91"
+
+    // Question 8: Print a string Fred with 15 places pad with spaces
+    cout << setfill(' ') << setw(15) << "Fred" << endl; // outputs "           Fred"
+
+    // Question 9: Print string Fred with 15 places and left justified by the word Shaggy
+    cout << left << setw(15) << "Fred" << "Shaggy" << endl; //outputs "Fred           Shaggy"
+
+    /* Question 10: collumns and rows lined up as follows:
+              10.57         125.89        1001.00
+             100.68          15.89          10.90
+    */
+    cout << right << setprecision(2) << fixed;
+    cout << setw(15) << 10.57;
+    cout << setw(15) << 125.89;
+    cout << setw(15) << 1001.00 << endl;
+
+    cout << setw(15) << 100.68;
+    cout << setw(15) << 15.89;
+    cout << setw(15) << 10.90 << endl;
+
+    /*
+    This concludes the question set for stream manipulators
+    */
+
+
+
+
+
 
     cout << endl << endl;
 }
